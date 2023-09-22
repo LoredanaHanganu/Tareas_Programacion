@@ -19,22 +19,26 @@ public class Calculadora_Entradas {
         // inciamos una estancia de la clase Scanner
         Scanner sc = new Scanner(System.in);
 
-        // Recogemos por consola el número de entradas infantiles
+        // Pedimoas y recogemos por consola el número de entradas infantiles
         System.out.print("Introduzca el número de entradas infantiles que desea comprar: ");
         double entradasInfantiles = sc.nextDouble();
 
-        // Recogemos por consola el número de entradas para adultos
+        // Pedimoas y recogemos por consola el número de entradas para adultos
         System.out.print("Introduzca el número de entradas para adultos que desea comprar: ");
         double entradasAdultos = sc.nextDouble();
 
+        // calculamos el precio total de las entradas
         double precioTotalEntradas = precioTotalEntradas(entradasInfantiles, entradasAdultos);
         double descuento = 5;
 
         // System.out.println("Precio total de las entradas sin descuento: " + precioTotalEntradas);
+
+        // Usando un ternario sacamos el precio de las entradas tanto si supera como si no los 100€
         double precioFinal = (precioTotalEntradas >= 100 ) ? precioTotalEntradas - descuento : precioTotalEntradas;
         System.out.println("El precio total de las entradas es: " + precioFinal);
     }
 
+    // Método para calcular el precio de las entradas
     public static double precioTotalEntradas(double entradasInfantiles, double entradasAdultos) {
         double precioEntradaInfantil = 15.50;
         double precioEntradaAdulto = 20;

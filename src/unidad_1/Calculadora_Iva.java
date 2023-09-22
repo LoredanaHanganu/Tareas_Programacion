@@ -21,15 +21,15 @@ public class Calculadora_Iva {
         System.out.print("Introduzca el IVA: ");
         double porcentajeIva = sc.nextDouble();
 
-        // Caluculamos el Iva proporcional y el precio total con el Iva incluido
+        // Calculamos el Iva proporcional y el precio total con el Iva incluido
         double ivaProporcional = baseImponible * porcentajeIva/100;
         double precioTotal = baseImponible + ivaProporcional;
 
-        // sacamos por consola los datos
+        // Sacamos por consola los datos
         System.out.println( "El IVA es: " + ivaProporcional);
         System.out.println("El precio total con IVA es: " + precioTotal);
 
-        // cerramos scanner
+        // Cerramos scanner
         sc.close();
     }
 }

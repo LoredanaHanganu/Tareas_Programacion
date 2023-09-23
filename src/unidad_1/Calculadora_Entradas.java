@@ -16,7 +16,7 @@ public class Calculadora_Entradas {
 
     public static void main(String[] args) {
 
-        // inciamos una estancia de la clase Scanner
+        // Inciamos una estancia de la clase Scanner
         Scanner sc = new Scanner(System.in);
 
         // Pedimos y recogemos por consola el número de entradas infantiles
@@ -35,7 +35,7 @@ public class Calculadora_Entradas {
 
         // Usando un ternario sacamos el precio de las entradas tanto si supera como si no, los 100€
         double precioFinal = (precioTotalEntradas >= 100 ) ? precioTotalEntradas - descuento : precioTotalEntradas;
-        System.out.println("El precio total de las entradas es: " + precioFinal);
+        System.out.printf("El precio total de las entradas es: " + "%.2f" , precioFinal);
 
         // Cerramos scanner
         sc.close();

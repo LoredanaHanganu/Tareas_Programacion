@@ -26,8 +26,8 @@ public class Calculadora_Iva {
         double precioTotal = baseImponible + ivaProporcional;
 
         // Sacamos por consola los datos
-        System.out.println( "El IVA es: " + ivaProporcional);
-        System.out.println("El precio total con IVA es: " + precioTotal);
+        System.out.printf( "El IVA es: " + "%.2f", ivaProporcional);
+        System.out.printf("\nEl precio total con IVA es: " + "%.2f", precioTotal);
 
         // Cerramos scanner
         sc.close();

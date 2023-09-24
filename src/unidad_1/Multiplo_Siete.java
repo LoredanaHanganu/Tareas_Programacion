@@ -13,15 +13,22 @@ public class Multiplo_Siete {
 
     public static void main(String[] args) {
 
+        // iniciamos una instancia de la clase Scanner
         Scanner sc = new Scanner(System.in);
 
+        // pedimos y recogemos por consola un número entero
         System.out.print("Introduzca un número entero: ");
         int numeroEntero = sc.nextInt();
 
-        int resultado = ( numeroEntero % 7 == 0 ) ? 1 : 0 ;
+        // Sacamos el resto de la división
+        int resto = numeroEntero % 7;
 
+        // Teniendo en cuenta que un número siempre será multiple de sí mismo restamos al multiple el resto
+        // averigiuandfo así el número a sumar.
+        int numSumado = 7-resto;
 
-        System.out.println( resultado );
+        System.out.println( "El resto de la disvisón es: " + resto );
+        System.out.println("El número a sumar para que el número dado sea múltiplo de 7 es: " + numSumado);
 
     }
 }

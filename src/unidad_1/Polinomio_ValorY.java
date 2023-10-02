@@ -15,22 +15,22 @@ public class Polinomio_ValorY {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce el coeficiente a: ");
+        System.out.print("Introduce el coeficiente a: ");
         int a  = sc.nextInt();
 
-        System.out.println("Introduce el coeficiente b: ");
+        System.out.print("Introduce el coeficiente b: ");
         int b  = sc.nextInt();
 
-        System.out.println("Introduce el coeficiente c: ");
+        System.out.print("Introduce el coeficiente c: ");
         int c  = sc.nextInt();
 
-        System.out.println("Introduce un número entero x: ");
+        System.out.print("Introduce un número entero x: ");
         int x  = sc.nextInt();
 
         int y = a*(x*x) + (b*x) + c;
 
-        System.out.println("el valor de y es: " + y);
+        System.out.println("El valor de y es: " + y);
 
-
+        sc.close();
     }
 }

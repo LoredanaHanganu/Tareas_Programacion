@@ -29,6 +29,8 @@ public class Calculadora_reloj {
 
         System.out.println("En "+ segundosTotal + " segundos " + " hay " + horas + " horas " + minutos + " minutos " + " y " + segundos +" segundos ");
 
+        sc.close();
 
     }
 }
+

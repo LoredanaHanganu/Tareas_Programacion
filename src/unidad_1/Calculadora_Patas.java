@@ -22,21 +22,21 @@ public class Calculadora_Patas {
 
         // Pedimos y recogemos por consola el número de hormigas
         System.out.print("Introduzca el número de hormigas capturadas: ");
-        double hormigas = sc.nextDouble();
-        double patasHormigas = hormigas * 6;
+        int hormigas = sc.nextInt();
+        int patasHormigas = hormigas * 6;
 
         // Pedimos y recogemos por consola el número de arañas
         System.out.print("Introduzca el número de arañas capturadas: ");
-        double aranyas = sc.nextDouble();
-        double patasAranyas = aranyas * 8;
+        int aranyas = sc.nextInt();
+        int patasAranyas = aranyas * 8;
 
         // Pedimos y recogemos por consola el número de cochinillas
         System.out.print("Introduzca el número de cochinillas capturadas: ");
-        double cochinillas = sc.nextDouble();
-        double patasCochinillas = cochinillas * 14;
+        int cochinillas = sc.nextInt();
+        int patasCochinillas = cochinillas * 14;
 
         // Calculamos el número total de patas
-        double patasInvertebratos = patasHormigas + patasAranyas + patasCochinillas;
+        int patasInvertebratos = patasHormigas + patasAranyas + patasCochinillas;
 
         // Mostramos por consola el número de patas
         System.out.println("El número total de patas es: " + patasInvertebratos);

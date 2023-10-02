@@ -21,7 +21,7 @@ public class Calculadora_Entradas {
 
         // Pedimos y recogemos por consola el número de entradas infantiles
         System.out.print("Introduzca el número de entradas infantiles que desea comprar: ");
-        double entradasInfantiles = sc.nextDouble();
+        int entradasInfantiles = sc.nextInt();
 
         // Pedimos y recogemos por consola el número de entradas para adultos
         System.out.print("Introduzca el número de entradas para adultos que desea comprar: ");
@@ -29,7 +29,7 @@ public class Calculadora_Entradas {
 
         // Calculamos el precio total de las entradas
         double precioTotalEntradas = precioTotalEntradas(entradasInfantiles, entradasAdultos);
-        double descuento = 5;
+        int descuento = 5;
 
         // System.out.println("Precio total de las entradas sin descuento: " + precioTotalEntradas);
 
